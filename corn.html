@@ -1,0 +1,163 @@
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cornhub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        nav {
+            background-color: #262626;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            color: #ffd700;
+            font-size: 2em;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1551754655-cd27e38d2076');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .corn-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .corn-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .corn-card:hover {
+            transform: scale(1.02);
+        }
+        .corn-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .corn-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #F28705;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">
+                🌽 Cornhub
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#types">Types</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Chào mừng đến Cornhub</h1>
+            <p></p>
+        </div>
+    </section>
+
+    <section class="content-section" id="about">
+        <h2>Giới thiệu</h2>
+        <p>Bắp là một trong những thực phẩm chủ yếu ở nhiều nơi trên thế giới. Ngoài việc được tiêu thụ trực tiếp bởi con người (thường dưới dạng masa), ngô cũng được sử dụng để sản xuất ethanol ngô, thức ăn chăn nuôi và các sản phẩm ngô khác, chẳng hạn như tinh bột ngô và xi-rô ngô.</p>
+    </section>
+
+    <section class="content-section" id="types">
+        <h2>Các trang thông tin về bắp</h2>
+        <div class="corn-types">
+            <a href="bap-ngot-nuoc.html">
+                <div class="corn-card">
+                    <img src="https://www.marthastewart.com/thmb/3iJmkhivmvIIJEYfn2Srqy5h7Bk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/smart-swap-for-corn-syrup-getty-0123-2000-3dc888877eea4f3ba85052a46c4500e0.jpg" alt="Bắp ngọt nước">
+                    <h3>Bắp ngọt nước</h3>
+                    <p>Siro bắp là một loại siro làm từ tinh bột ngô được dùng để giúp món ăn có độ mềm ẩm, độ ngọt.</p>
+                </div>
+            </a>
+            <a href="ky-thuat-trong-bap.html">
+                <div class="corn-card">
+                    <img src="https://media.istockphoto.com/id/1133692494/vi/anh/b%E1%BA%AFp-ng%C3%B4-v%E1%BB%9Bi-l%C3%A1-xanh-ph%C3%A1t-tri%E1%BB%83n-trong-l%C4%A9nh-v%E1%BB%B1c-n%C3%B4ng-nghi%E1%BB%87p-ngo%C3%A0i-tr%E1%BB%9Di.jpg?s=612x612&w=0&k=20&c=Y7V7w2f1ELp9G4Goqg76aWl59rFBvNkB60sX32T-lr8=" alt="Kỹ thuật trồng bắp">
+                    <h3>Kỹ thuật trồng bắp</h3>
+                    <p>Kỹ thuật trồng bắp tốt sẽ giúp chúng ta tiết kiệm chí và nâng cao chất lượng bắp.</p>
+                </div>
+            </a>
+            <a href="vai-tro-cua-bap.html">
+                <div class="corn-card">
+                    <img src="https://nongsanleanh.com.vn/storage/photos/1/phat-trien-ngo-ben-vung%20(1).jpg" alt="Vai trò của bắp trong lương thực">
+                    <h3>Vai trò của bắp trong lương thực</h3>
+                    <p>Không chỉ cung cấp nguồn dinh dưỡng thiết yếu cho con người và vật nuôi, cây bắp ngô còn mang lại nhiều cơ hội phát triển kinh tế cho người trồng và các ngành công nghiệp liên quan.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2025 Cornhub. All rights reserved.</p>
+        <p></p>
+    </footer>
+</body>
+</html>
